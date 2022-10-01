@@ -1,5 +1,5 @@
 name: "Elias'"
-output_dir: "docs"
+output_dir: "."
 exclude: ["README.md", "\\.sh", "cache"]
 output:
   html_document:

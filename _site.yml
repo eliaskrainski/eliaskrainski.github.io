@@ -1,0 +1,30 @@
+name: "Elias'"
+output_dir: "docs"
+exclude: ["README.md", "\\.sh", "cache"]
+output:
+  html_document:
+    theme: flatly
+    highlight: kate
+    code_folding: hide
+    number_sections: false
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    includes:
+      in_header: analytics.html
+      after_body: footer.html
+navbar:
+  title: "Elias Teixeira Krainski"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Publications"
+      href: publications.html
+    - text: "Tutorials"
+      href: tutorials.html
+  right:
+    - text: GitHub
+      icon: fa-github fa-lg
+      href: https://github.com/eliaskrainski/eliaskrainski.github.io

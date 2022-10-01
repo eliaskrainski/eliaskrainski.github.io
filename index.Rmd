@@ -9,7 +9,7 @@ output:
 source("setup_knitr.R")
 ```
 
-![Currently](https://cemse.kaust.edu.sa/bayescomp/people/person/elias-teixeira-krainski)
+[Currently](https://cemse.kaust.edu.sa/bayescomp/people/person/elias-teixeira-krainski)
 
 <!-- <div class="alert alert-danger" role="alert"> -->
 <!-- </div> -->
@@ -19,4 +19,5 @@ source("setup_knitr.R")
 
 <!-- links -->
 
-[Google Scholar]: https://scholar.google.com/citations?user=s_-u8LgAAAAJ
+[Google Scholar](https://scholar.google.com/citations?user=s_-u8LgAAAAJ)
+

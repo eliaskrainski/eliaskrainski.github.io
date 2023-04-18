@@ -12,7 +12,7 @@
 
 
 
-<title>Examples on the INLAspacetime website</title>
+<title>Vignettes on the INLAspacetime website</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -27,31 +27,15 @@ document.addEventListener('DOMContentLoaded', function(e) {
   }
 });
 </script>
-<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
-// v0.0.1
-// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
-
-document.addEventListener('DOMContentLoaded', function() {
-  const codeList = document.getElementsByClassName("sourceCode");
-  for (var i = 0; i < codeList.length; i++) {
-    var linkList = codeList[i].getElementsByTagName('a');
-    for (var j = 0; j < linkList.length; j++) {
-      if (linkList[j].innerHTML === "") {
-        linkList[j].setAttribute('aria-hidden', 'true');
-      }
-    }
-  }
-});
-</script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
 
 
 
@@ -251,24 +235,41 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
-<h1 class="title toc-ignore">Examples on the INLAspacetime website</h1>
+<h1 class="title toc-ignore">Vignettes on the INLAspacetime website</h1>
 
 
 
-<div id="package-examples" class="section level2">
-<h2>Package examples</h2>
+<div id="vignettes" class="section level2">
+<h2>Vignettes</h2>
 <p>These examples/tutorials are available on (<a href="https://eliaskrainski.github.io/INLAspacetime/" class="uri">https://eliaskrainski.github.io/INLAspacetime/</a>)</p>
 <ul>
-<li><a href="https://eliaskrainski.github.io/INLAspacetime/articles/web/barrierExample.html">A barrier model illustration</a></li>
-<li><a href="https://eliaskrainski.github.io/INLAspacetime/articles/web/piemonte.html">The Piemonte dataset example</a></li>
+<li><a href="https://eliaskrainski.github.io/INLAspacetime/vignettes/barrierExample.html">A
+barrier model illustration</a></li>
+<li><a href="https://eliaskrainski.github.io/INLAspacetime/vignettes/piemonte.html">The
+Piemonte dataset example</a></li>
 </ul>
-</div>
-<div id="package-vignettes" class="section level2">
-<h2>Package vignettes</h2>
-<p>These package vignettes are also available on (<a href="https://eliaskrainski.github.io/INLAspacetime/" class="uri">https://eliaskrainski.github.io/INLAspacetime/</a>)</p>
-<ul>
-<li><a href="https://eliaskrainski.github.io/INLAspacetime/articles/website_examples.html">Examples on the INLAspacetime website</a></li>
-</ul>
+<!-- ## Package vignettes -->
+<!-- These package vignettes are also available on -->
+<!-- (https://eliaskrainski.github.io/INLAspacetime/) -->
+<!-- ```{r, echo=FALSE,results="asis"} -->
+<!-- files <- list.files(".", "\\.Rmd$") -->
+<!-- for (file in files) { -->
+<!--   lines <- readLines(file, n = 10) -->
+<!--   title_idx <- grep("^title: ", lines) -->
+<!--   if (length(title_idx) > 0) { -->
+<!--     title <- sub("^title: ", "", lines[title_idx[1]]) -->
+<!--     title <- sub('^"', "", title) -->
+<!--     title <- sub('"$', "", title) -->
+<!--     cat("* [", -->
+<!--       title, -->
+<!--       "](https://eliaskrainski.github.io/INLAspacetime/vignettes/", -->
+<!--       sub("\\.Rmd", ".html", file), -->
+<!--       ")\n", -->
+<!--       sep = "" -->
+<!--     ) -->
+<!--   } -->
+<!-- } -->
+<!-- ``` -->
 </div>
 
 
